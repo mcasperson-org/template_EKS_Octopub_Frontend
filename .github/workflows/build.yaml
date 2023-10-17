@@ -56,7 +56,7 @@ jobs:
           # Change this to "true" when you are sure the tag is unique. It is set to false
           # to ensure that existing images are not overwritten unintentionally.
           push: false
-          tags: :${{ steps.determine_version.outputs.semVer }}
+          tags: octopussamples/octopub-frontend:${{ steps.determine_version.outputs.semVer }}
 
       - name: Create Octopus Release
         uses: OctopusDeploy/create-release-action@v3
@@ -65,4 +65,4 @@ jobs:
           OCTOPUS_URL: https://mattc.octopus.app
           OCTOPUS_SPACE: Spaces-1913
         with:
-          project: 
+          project: EKS Octopub Frontend
