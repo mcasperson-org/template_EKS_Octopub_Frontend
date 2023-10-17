@@ -75,6 +75,6 @@ jobs:
         env:
           OCTOPUS_API_KEY: ${{ secrets.OCTOPUS_API_TOKEN }}
           OCTOPUS_URL: https://mattc.octopus.app
-          OCTOPUS_SPACE: K8s
+          OCTOPUS_SPACE: K8s At Scale
         with:
           project: EKS Octopub Frontend
